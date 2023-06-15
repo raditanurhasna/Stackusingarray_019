@@ -21,10 +21,22 @@ public:
 
 		top++;
 		stack_array[top] = element;
+
 		cout << endl;
 		cout << element << "ditambahkan(pushed)." << endl;
 
 		return element;
 	
 	}
+
+	void pop() {
+		if (empty()) {
+			cout << "\nStack is empty. Cannot pop." << endl;
+			return;
+		}
+
+		cout << "\nStack popped element is : " << stack_array[top] << endl;
+		top--;
+	}
 }
+
